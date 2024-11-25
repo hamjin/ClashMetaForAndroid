@@ -77,6 +77,13 @@ class AppSettingsDesign(
                 }
             }
 
+            switch(
+                value = uiStore::excludeFromRecents,
+                icon = R.drawable.eye_off,
+                title = R.string.exclude_from_recents,
+                summary = R.string.exclude_from_recents_summary,
+            )
+
             category(R.string.service)
 
             switch(
