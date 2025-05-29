@@ -14,11 +14,6 @@ class UiStore(context: Context) {
             .asStoreProvider()
     )
 
-    var enableClashService: Boolean by store.boolean(
-        key = "enable_clash_service",
-        defaultValue = false
-    )
-
     var enableVpn: Boolean by store.boolean(
         key = "enable_vpn",
         defaultValue = true

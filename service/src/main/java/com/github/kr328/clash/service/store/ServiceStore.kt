@@ -14,6 +14,11 @@ class ServiceStore(context: Context) {
             .asStoreProvider()
     )
 
+    var enableClashService: Boolean by store.boolean(
+        key = "enable_clash_service",
+        defaultValue = false
+    )
+
     var activeProfile: UUID? by store.typedString(
         key = "active_profile",
         from = { if (it.isBlank()) null else UUID.fromString(it) },
